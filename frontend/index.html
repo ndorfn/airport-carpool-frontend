@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Carpool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Airport Carpool</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Airport Carpool</h2>
+            <p>Save money and reduce emissions by sharing rides to the airport with people in your area.</p>
+            <p><strong>Sign up for free and start carpooling today!</strong></p>
+            <a href="#signup" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <p><strong>It's free to join our community!</strong></p>
+            <form action="/signup" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="travel-time">Preferred Travel Time:</label>
+                <input type="time" id="travel-time" name="travel_time" required>
+
+                <label for="roster">Roster Schedule:</label>
+                <select id="roster" name="roster" required>
+                    <option value="8/6">8/6</option>
+                    <option value="2/1">2/1</option>
+                    <option value="4/3">4/3</option>
+                    <option value="Custom">Custom</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Airport Carpool. All rights reserved.</p>
+    </footer>
+</body>
+</html>
