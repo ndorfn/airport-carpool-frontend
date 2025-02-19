@@ -1,1 +1,12 @@
+{
+  "name": "airport-carpool-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Airport Carpool",
+  "scripts": {
+    "start": "npx serve -s"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
 
